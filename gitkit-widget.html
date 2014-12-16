@@ -1,0 +1,27 @@
+<head>
+  <!-- Beginning of Google Identity Toolkit Sign In button -->
+  <!-- Code snippet can be downloaded according to the guide https://developers.google.com/identity-toolkit/quickstart/ -->
+<script type="text/javascript" src="http://www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+<link type="text/css" rel="stylesheet" href="http://www.gstatic.com/authtoolkit/css/gitkit.css" />
+<script type="text/javascript">
+  var config = {
+      apiKey: 'AIzaSyA4Q6WM2a9eCHmTHUYKG6Konpzn310baxA',
+      signInSuccessUrl: '/',
+      idps: ["google"],
+      oobActionUrl: '/sendemail',
+      siteName: 'RubyEmail'
+  };
+  // The HTTP POST body should be escaped by the server to prevent XSS
+  window.google.identitytoolkit.start(
+      '#gitkitWidgetDiv', // accepts any CSS selector
+      config,
+      decodeURIComponent('<%= postBody %>'));
+</script>
+
+  <!-- End of Google Identity Toolkit Sign In button -->
+</head>
+<body>
+<!-- Include the sign in page widget with the matching 'gitkitWidgetDiv' id -->
+<div id="gitkitWidgetDiv"></div>
+<!-- End identity toolkit widget -->
+</body>

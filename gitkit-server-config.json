@@ -1,0 +1,7 @@
+{
+  "clientId" : "342023135694-36iao3vq44sjkne2ev6jdro4m41b7fol.apps.googleusercontent.com",
+  "serviceAccountEmail" : "342023135694-36iao3vq44sjkne2ev6jdro4m41b7fol@developer.gserviceaccount.com",
+  "serviceAccountPrivateKeyFile" : "/Users/dbalram/Projects/ruby-quickstart/RubyEmail-9e4aaf15d907.p12",
+  "widgetUrl" : "/gitkit",
+  "cookieName" : "gtoken"
+}
